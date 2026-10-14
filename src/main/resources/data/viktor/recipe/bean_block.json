@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": { "#": { "item": "viktor:beans" } },
+  "pattern": ["###", "###", "###"],
+  "result": { "id": "viktor:bean_block", "count": 1 }
+}

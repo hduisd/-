@@ -1,0 +1,6 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [ { "item": "viktor:bean_block" } ],
+  "result": { "id": "viktor:beans", "count": 9 }
+}

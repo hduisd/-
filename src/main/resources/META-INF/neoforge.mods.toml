@@ -1,0 +1,25 @@
+modLoader = "javafml"
+loaderVersion = "[1,)"
+license = "All Rights Reserved"
+
+[[mods]]
+modId = "viktor"
+version = "0.1.0"
+displayName = "Віктор"
+description = '''
+Гумористичний і фантастичний мод про боби, бобових жуків, манго, рожеву енергію та сутність Віктор.
+'''
+
+[[dependencies.viktor]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.1.0,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.viktor]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.1]"
+ordering = "NONE"
+side = "BOTH"
