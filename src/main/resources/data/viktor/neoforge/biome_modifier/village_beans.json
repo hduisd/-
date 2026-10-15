@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#viktor:village_biomes",
+  "features": "viktor:village_beans",
+  "step": "top_layer_modification"
+}

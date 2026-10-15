@@ -1,7 +1,9 @@
 package com.viktor;
 
+import com.viktor.event.VillagerSetup;
 import com.viktor.registry.ModBlocks;
 import com.viktor.registry.ModCreativeTabs;
+import com.viktor.registry.ModFeatures;
 import com.viktor.registry.ModItems;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.common.Mod;
@@ -14,5 +16,7 @@ public class ViktorMod {
         ModBlocks.BLOCKS.register(modEventBus);
         ModItems.ITEMS.register(modEventBus);
         ModCreativeTabs.TABS.register(modEventBus);
+        ModFeatures.FEATURES.register(modEventBus);
+        modEventBus.addListener(VillagerSetup::onCommonSetup);
     }
 }
