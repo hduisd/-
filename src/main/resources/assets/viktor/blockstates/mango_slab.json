@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "viktor:block/mango_slab"
+    },
+    "type=top": {
+      "model": "viktor:block/mango_slab_top"
+    },
+    "type=double": {
+      "model": "viktor:block/mango_planks"
+    }
+  }
+}

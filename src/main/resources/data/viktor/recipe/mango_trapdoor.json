@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "wooden_trapdoor",
+  "key": {
+    "#": {
+      "item": "viktor:mango_planks"
+    }
+  },
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "result": {
+    "id": "viktor:mango_trapdoor",
+    "count": 2
+  }
+}

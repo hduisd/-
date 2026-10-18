@@ -10,5 +10,13 @@
   "block.viktor.stripped_mango_wood": "Обтесована мангова деревина",
   "block.viktor.mango_planks": "Мангові дошки",
   "block.viktor.mango_leaves": "Мангове листя",
-  "block.viktor.mango_sapling": "Манговий саджанець"
+  "block.viktor.mango_sapling": "Манговий саджанець",
+  "block.viktor.mango_stairs": "Мангові сходи",
+  "block.viktor.mango_slab": "Мангова плита",
+  "block.viktor.mango_fence": "Манговий паркан",
+  "block.viktor.mango_fence_gate": "Мангова хвіртка",
+  "block.viktor.mango_door": "Мангові двері",
+  "block.viktor.mango_trapdoor": "Манговий люк",
+  "block.viktor.mango_button": "Мангова кнопка",
+  "block.viktor.mango_pressure_plate": "Мангова натискна плита"
 }

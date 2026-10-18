@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "wooden_fence",
+  "key": {
+    "W": {
+      "item": "viktor:mango_planks"
+    },
+    "#": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "W#W",
+    "W#W"
+  ],
+  "result": {
+    "id": "viktor:mango_fence",
+    "count": 3
+  }
+}

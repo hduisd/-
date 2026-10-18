@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "viktor:block/mango_pressure_plate_up"
+    },
+    "powered=true": {
+      "model": "viktor:block/mango_pressure_plate_down"
+    }
+  }
+}

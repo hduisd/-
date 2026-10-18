@@ -6,6 +6,14 @@
     "viktor:stripped_mango_log",
     "viktor:mango_wood",
     "viktor:stripped_mango_wood",
-    "viktor:mango_planks"
+    "viktor:mango_planks",
+    "viktor:mango_stairs",
+    "viktor:mango_slab",
+    "viktor:mango_fence",
+    "viktor:mango_fence_gate",
+    "viktor:mango_door",
+    "viktor:mango_trapdoor",
+    "viktor:mango_button",
+    "viktor:mango_pressure_plate"
   ]
 }

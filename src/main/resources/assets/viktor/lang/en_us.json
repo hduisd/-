@@ -10,5 +10,13 @@
   "block.viktor.stripped_mango_wood": "Stripped Mango Wood",
   "block.viktor.mango_planks": "Mango Planks",
   "block.viktor.mango_leaves": "Mango Leaves",
-  "block.viktor.mango_sapling": "Mango Sapling"
+  "block.viktor.mango_sapling": "Mango Sapling",
+  "block.viktor.mango_stairs": "Mango Stairs",
+  "block.viktor.mango_slab": "Mango Slab",
+  "block.viktor.mango_fence": "Mango Fence",
+  "block.viktor.mango_fence_gate": "Mango Fence Gate",
+  "block.viktor.mango_door": "Mango Door",
+  "block.viktor.mango_trapdoor": "Mango Trapdoor",
+  "block.viktor.mango_button": "Mango Button",
+  "block.viktor.mango_pressure_plate": "Mango Pressure Plate"
 }

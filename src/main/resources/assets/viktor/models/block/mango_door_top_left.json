@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/door_top_left",
+  "textures": {
+    "top": "viktor:block/mango_door_top",
+    "bottom": "viktor:block/mango_door_bottom"
+  },
+  "render_type": "minecraft:cutout"
+}
