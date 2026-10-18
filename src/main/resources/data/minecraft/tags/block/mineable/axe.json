@@ -1,1 +1,11 @@
-{ "replace": false, "values": [ "viktor:bean_block" ] }
+{
+  "replace": false,
+  "values": [
+    "viktor:bean_block",
+    "viktor:mango_log",
+    "viktor:stripped_mango_log",
+    "viktor:mango_wood",
+    "viktor:stripped_mango_wood",
+    "viktor:mango_planks"
+  ]
+}

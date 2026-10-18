@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "viktor:mango_log",
+    "viktor:stripped_mango_log",
+    "viktor:mango_wood",
+    "viktor:stripped_mango_wood"
+  ]
+}

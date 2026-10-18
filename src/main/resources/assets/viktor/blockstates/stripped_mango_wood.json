@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=y": {
+      "model": "viktor:block/stripped_mango_wood"
+    },
+    "axis=z": {
+      "model": "viktor:block/stripped_mango_wood",
+      "x": 90
+    },
+    "axis=x": {
+      "model": "viktor:block/stripped_mango_wood",
+      "x": 90,
+      "y": 90
+    }
+  }
+}

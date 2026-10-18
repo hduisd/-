@@ -2,5 +2,13 @@
   "itemGroup.viktor": "Viktor",
   "item.viktor.beans": "Beans",
   "block.viktor.bean_block": "Block of Beans",
-  "block.viktor.bean_crop": "Bean Plant"
+  "block.viktor.bean_crop": "Bean Plant",
+  "item.viktor.mango": "Mango",
+  "block.viktor.mango_log": "Mango Log",
+  "block.viktor.stripped_mango_log": "Stripped Mango Log",
+  "block.viktor.mango_wood": "Mango Wood",
+  "block.viktor.stripped_mango_wood": "Stripped Mango Wood",
+  "block.viktor.mango_planks": "Mango Planks",
+  "block.viktor.mango_leaves": "Mango Leaves",
+  "block.viktor.mango_sapling": "Mango Sapling"
 }

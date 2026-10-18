@@ -2,5 +2,13 @@
   "itemGroup.viktor": "Віктор",
   "item.viktor.beans": "Боби",
   "block.viktor.bean_block": "Блок бобів",
-  "block.viktor.bean_crop": "Бобова рослина"
+  "block.viktor.bean_crop": "Бобова рослина",
+  "item.viktor.mango": "Манго",
+  "block.viktor.mango_log": "Мангова колода",
+  "block.viktor.stripped_mango_log": "Обтесована мангова колода",
+  "block.viktor.mango_wood": "Мангова деревина",
+  "block.viktor.stripped_mango_wood": "Обтесована мангова деревина",
+  "block.viktor.mango_planks": "Мангові дошки",
+  "block.viktor.mango_leaves": "Мангове листя",
+  "block.viktor.mango_sapling": "Манговий саджанець"
 }

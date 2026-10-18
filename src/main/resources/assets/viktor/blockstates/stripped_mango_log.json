@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=y": {
+      "model": "viktor:block/stripped_mango_log"
+    },
+    "axis=z": {
+      "model": "viktor:block/stripped_mango_log",
+      "x": 90
+    },
+    "axis=x": {
+      "model": "viktor:block/stripped_mango_log",
+      "x": 90,
+      "y": 90
+    }
+  }
+}

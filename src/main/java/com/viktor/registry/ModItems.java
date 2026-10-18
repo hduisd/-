@@ -5,12 +5,19 @@ import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemNameBlockItem;
+import net.minecraft.world.level.block.Block;
+import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
 public class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(ViktorMod.MODID);
 
+    private static DeferredItem<Item> blockItem(String name, DeferredBlock<? extends Block> block) {
+        return ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
+    }
+
+    // ---- Боби ----
     public static final FoodProperties BEANS_FOOD = new FoodProperties.Builder()
             .nutrition(3)
             .saturationModifier(0.4F)
@@ -20,6 +27,22 @@ public class ModItems {
     public static final DeferredItem<Item> BEANS = ITEMS.register("beans",
             () -> new ItemNameBlockItem(ModBlocks.BEAN_CROP.get(), new Item.Properties().food(BEANS_FOOD)));
 
-    public static final DeferredItem<Item> BEAN_BLOCK_ITEM = ITEMS.register("bean_block",
-            () -> new BlockItem(ModBlocks.BEAN_BLOCK.get(), new Item.Properties()));
+    public static final DeferredItem<Item> BEAN_BLOCK_ITEM = blockItem("bean_block", ModBlocks.BEAN_BLOCK);
+
+    // ---- Манго ----
+    public static final FoodProperties MANGO_FOOD = new FoodProperties.Builder()
+            .nutrition(4)
+            .saturationModifier(0.3F)
+            .build();
+
+    public static final DeferredItem<Item> MANGO = ITEMS.register("mango",
+            () -> new Item(new Item.Properties().food(MANGO_FOOD)));
+
+    public static final DeferredItem<Item> MANGO_LOG_ITEM = blockItem("mango_log", ModBlocks.MANGO_LOG);
+    public static final DeferredItem<Item> STRIPPED_MANGO_LOG_ITEM = blockItem("stripped_mango_log", ModBlocks.STRIPPED_MANGO_LOG);
+    public static final DeferredItem<Item> MANGO_WOOD_ITEM = blockItem("mango_wood", ModBlocks.MANGO_WOOD);
+    public static final DeferredItem<Item> STRIPPED_MANGO_WOOD_ITEM = blockItem("stripped_mango_wood", ModBlocks.STRIPPED_MANGO_WOOD);
+    public static final DeferredItem<Item> MANGO_PLANKS_ITEM = blockItem("mango_planks", ModBlocks.MANGO_PLANKS);
+    public static final DeferredItem<Item> MANGO_LEAVES_ITEM = blockItem("mango_leaves", ModBlocks.MANGO_LEAVES);
+    public static final DeferredItem<Item> MANGO_SAPLING_ITEM = blockItem("mango_sapling", ModBlocks.MANGO_SAPLING);
 }
