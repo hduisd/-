@@ -1,7 +1,13 @@
 {
   "variants": {
-    "": {
+    "fruit=0": {
       "model": "viktor:block/mango_leaves"
+    },
+    "fruit=1": {
+      "model": "viktor:block/mango_leaves_unripe"
+    },
+    "fruit=2": {
+      "model": "viktor:block/mango_leaves_ripe"
     }
   }
 }

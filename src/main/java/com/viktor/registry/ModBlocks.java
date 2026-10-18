@@ -4,6 +4,7 @@ import com.viktor.ViktorMod;
 import com.viktor.block.BeanCropBlock;
 import com.viktor.block.FlammableBlock;
 import com.viktor.block.FlammableLeavesBlock;
+import com.viktor.block.MangoLeavesBlock;
 import com.viktor.block.MangoLogBlock;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
@@ -45,8 +46,8 @@ public class ModBlocks {
     public static final DeferredBlock<FlammableBlock> MANGO_PLANKS = BLOCKS.register("mango_planks",
             () -> new FlammableBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS), 5, 20));
 
-    public static final DeferredBlock<FlammableLeavesBlock> MANGO_LEAVES = BLOCKS.register("mango_leaves",
-            () -> new FlammableLeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LEAVES)));
+    public static final DeferredBlock<MangoLeavesBlock> MANGO_LEAVES = BLOCKS.register("mango_leaves",
+            () -> new MangoLeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LEAVES)));
 
     public static final DeferredBlock<SaplingBlock> MANGO_SAPLING = BLOCKS.register("mango_sapling",
             () -> new SaplingBlock(ModTreeGrowers.MANGO, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING)));
