@@ -21,5 +21,15 @@
   "block.viktor.mango_pressure_plate": "Мангова натискна плита",
   "item.viktor.rotten_mango": "Гниле манго",
   "block.viktor.rotten_mango_block": "Блок гнилого манго",
-  "block.viktor.mango_block": "Блок манго"
+  "block.viktor.mango_block": "Блок манго",
+  "item.viktor.green_olive": "Зелена оливка",
+  "block.viktor.green_olive_block": "Блок зелених оливок",
+  "block.viktor.green_olive_leaves": "Листя зеленої оливи",
+  "block.viktor.green_olive_sapling": "Саджанець зеленої оливи",
+  "item.viktor.black_olive": "Чорна оливка",
+  "block.viktor.black_olive_block": "Блок чорних оливок",
+  "block.viktor.black_olive_leaves": "Листя чорної оливи",
+  "block.viktor.black_olive_sapling": "Саджанець чорної оливи",
+  "block.viktor.olive_log": "Оливкова колода",
+  "block.viktor.olive_planks": "Оливкові дошки"
 }

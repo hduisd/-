@@ -4,7 +4,7 @@ license = "All Rights Reserved"
 
 [[mods]]
 modId = "viktor"
-version = "0.5.1"
+version = "0.6.0"
 displayName = "Віктор"
 description = '''
 Гумористичний і фантастичний мод про боби, бобових жуків, манго, рожеву енергію та сутність Віктор.

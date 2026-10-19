@@ -71,4 +71,29 @@ public class ModItems {
     public static final DeferredItem<Item> ROTTEN_MANGO = ITEMS.register("rotten_mango",
             () -> new Item(new Item.Properties().food(ROTTEN_MANGO_FOOD)));
     public static final DeferredItem<Item> ROTTEN_MANGO_BLOCK_ITEM = blockItem("rotten_mango_block", ModBlocks.ROTTEN_MANGO_BLOCK);
+
+    // ---- Оливки ----
+    public static final FoodProperties GREEN_OLIVE_FOOD = new FoodProperties.Builder()
+            .nutrition(2)
+            .saturationModifier(0.3F)
+            .build();
+
+    public static final FoodProperties BLACK_OLIVE_FOOD = new FoodProperties.Builder()
+            .nutrition(2)
+            .saturationModifier(0.4F)
+            .build();
+
+    /** Оливки: їжа і «насіння» одночасно (клік по землі садить саджанець оливкового дерева). */
+    public static final DeferredItem<Item> GREEN_OLIVE = ITEMS.register("green_olive",
+            () -> new ItemNameBlockItem(ModBlocks.GREEN_OLIVE_SAPLING.get(), new Item.Properties().food(GREEN_OLIVE_FOOD)));
+
+    public static final DeferredItem<Item> BLACK_OLIVE = ITEMS.register("black_olive",
+            () -> new ItemNameBlockItem(ModBlocks.BLACK_OLIVE_SAPLING.get(), new Item.Properties().food(BLACK_OLIVE_FOOD)));
+
+    public static final DeferredItem<Item> OLIVE_LOG_ITEM = blockItem("olive_log", ModBlocks.OLIVE_LOG);
+    public static final DeferredItem<Item> OLIVE_PLANKS_ITEM = blockItem("olive_planks", ModBlocks.OLIVE_PLANKS);
+    public static final DeferredItem<Item> GREEN_OLIVE_LEAVES_ITEM = blockItem("green_olive_leaves", ModBlocks.GREEN_OLIVE_LEAVES);
+    public static final DeferredItem<Item> BLACK_OLIVE_LEAVES_ITEM = blockItem("black_olive_leaves", ModBlocks.BLACK_OLIVE_LEAVES);
+    public static final DeferredItem<Item> GREEN_OLIVE_BLOCK_ITEM = blockItem("green_olive_block", ModBlocks.GREEN_OLIVE_BLOCK);
+    public static final DeferredItem<Item> BLACK_OLIVE_BLOCK_ITEM = blockItem("black_olive_block", ModBlocks.BLACK_OLIVE_BLOCK);
 }

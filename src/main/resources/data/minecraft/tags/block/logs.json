@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "#viktor:mango_logs"
+    "#viktor:mango_logs",
+    "viktor:olive_log"
   ]
 }

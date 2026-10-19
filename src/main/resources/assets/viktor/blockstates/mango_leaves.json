@@ -6,11 +6,32 @@
     "fruit=1": {
       "model": "viktor:block/mango_leaves_unripe"
     },
-    "fruit=2": {
-      "model": "viktor:block/mango_leaves_ripe"
-    },
     "fruit=3": {
       "model": "viktor:block/mango_leaves_rotten"
+    },
+    "fruit=2,ripe_age=0": {
+      "model": "viktor:block/mango_leaves_ripe"
+    },
+    "fruit=2,ripe_age=1": {
+      "model": "viktor:block/mango_leaves_ripe"
+    },
+    "fruit=2,ripe_age=2": {
+      "model": "viktor:block/mango_leaves_ripe"
+    },
+    "fruit=2,ripe_age=3": {
+      "model": "viktor:block/mango_leaves_ripe"
+    },
+    "fruit=2,ripe_age=4": {
+      "model": "viktor:block/mango_leaves_overripe"
+    },
+    "fruit=2,ripe_age=5": {
+      "model": "viktor:block/mango_leaves_overripe"
+    },
+    "fruit=2,ripe_age=6": {
+      "model": "viktor:block/mango_leaves_overripe"
+    },
+    "fruit=2,ripe_age=7": {
+      "model": "viktor:block/mango_leaves_overripe"
     }
   }
 }

@@ -21,5 +21,15 @@
   "block.viktor.mango_pressure_plate": "Mango Pressure Plate",
   "item.viktor.rotten_mango": "Rotten Mango",
   "block.viktor.rotten_mango_block": "Block of Rotten Mango",
-  "block.viktor.mango_block": "Block of Mango"
+  "block.viktor.mango_block": "Block of Mango",
+  "item.viktor.green_olive": "Green Olive",
+  "block.viktor.green_olive_block": "Block of Green Olives",
+  "block.viktor.green_olive_leaves": "Green Olive Leaves",
+  "block.viktor.green_olive_sapling": "Green Olive Sapling",
+  "item.viktor.black_olive": "Black Olive",
+  "block.viktor.black_olive_block": "Block of Black Olives",
+  "block.viktor.black_olive_leaves": "Black Olive Leaves",
+  "block.viktor.black_olive_sapling": "Black Olive Sapling",
+  "block.viktor.olive_log": "Olive Log",
+  "block.viktor.olive_planks": "Olive Planks"
 }

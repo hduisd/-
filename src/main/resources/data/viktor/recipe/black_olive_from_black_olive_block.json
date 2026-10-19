@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "viktor:black_olive_block"
+    }
+  ],
+  "result": {
+    "id": "viktor:black_olive",
+    "count": 9
+  }
+}

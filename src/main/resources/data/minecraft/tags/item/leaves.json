@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
-    "viktor:mango_leaves"
+    "viktor:mango_leaves",
+    "viktor:green_olive_leaves",
+    "viktor:black_olive_leaves"
   ]
 }

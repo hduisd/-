@@ -3,6 +3,10 @@
   "values": [
     "viktor:mango_leaves",
     "viktor:rotten_mango_block",
-    "viktor:mango_block"
+    "viktor:mango_block",
+    "viktor:green_olive_leaves",
+    "viktor:black_olive_leaves",
+    "viktor:green_olive_block",
+    "viktor:black_olive_block"
   ]
 }

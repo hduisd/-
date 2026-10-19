@@ -19,24 +19,28 @@ import net.minecraft.world.phys.BlockHitResult;
 
 /**
  * Мангове листя: на ньому росте манго.
- * fruit: 0 = немає, 1 = зелене, 2 = стигле жовте, 3 = гниле (якщо стигле довго не збирали).
+ * fruit: 0 = немає, 1 = зелене, 2 = стигле жовте, 3 = гниле.
+ * ripe_age (0..7): «годинник» гниття стиглого плоду. Кожен крок займає в середньому ~9000 тіків,
+ * 8 кроків = ~72000 тіків = 3 ігрові доби (при стандартному randomTickSpeed = 3).
  * Плід з'являється лише там, де під листям є вільне місце (він «висить»).
  * Стигле і гниле збираються правим кліком руки.
  */
 public class MangoLeavesBlock extends FlammableLeavesBlock {
     public static final IntegerProperty FRUIT = IntegerProperty.create("fruit", 0, 3);
+    public static final IntegerProperty RIPE_AGE = IntegerProperty.create("ripe_age", 0, 7);
     public static final int RIPE = 2;
     public static final int ROTTEN = 3;
+    public static final int RIPE_AGE_MAX = 7;
 
     public MangoLeavesBlock(Properties properties) {
         super(properties);
-        this.registerDefaultState(this.defaultBlockState().setValue(FRUIT, 0));
+        this.registerDefaultState(this.defaultBlockState().setValue(FRUIT, 0).setValue(RIPE_AGE, 0));
     }
 
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
         super.createBlockStateDefinition(builder);
-        builder.add(FRUIT);
+        builder.add(FRUIT, RIPE_AGE);
     }
 
     @Override
@@ -53,11 +57,17 @@ public class MangoLeavesBlock extends FlammableLeavesBlock {
         }
         int fruit = current.getValue(FRUIT);
         if (fruit < RIPE) {
-            if (level.isEmptyBlock(pos.below()) && random.nextInt(3) == 0) {
-                level.setBlock(pos, current.setValue(FRUIT, fruit + 1), 2);
+            // ріст плоду: у середньому ~7 хвилин на стадію
+            if (level.isEmptyBlock(pos.below()) && random.nextInt(6) == 0) {
+                level.setBlock(pos, current.setValue(FRUIT, fruit + 1).setValue(RIPE_AGE, 0), 2);
             }
-        } else if (fruit == RIPE && random.nextInt(6) == 0) {
-            level.setBlock(pos, current.setValue(FRUIT, ROTTEN), 2);
+        } else if (fruit == RIPE && random.nextInt(20) < 3) {
+            int age = current.getValue(RIPE_AGE);
+            if (age >= RIPE_AGE_MAX) {
+                level.setBlock(pos, current.setValue(FRUIT, ROTTEN).setValue(RIPE_AGE, 0), 2);
+            } else {
+                level.setBlock(pos, current.setValue(RIPE_AGE, age + 1), 2);
+            }
         }
     }
 
@@ -71,7 +81,7 @@ public class MangoLeavesBlock extends FlammableLeavesBlock {
                 Block.popResource(level, pos.below(), new ItemStack(drop, count));
                 level.playSound(null, pos, SoundEvents.SWEET_BERRY_BUSH_PICK_BERRIES, SoundSource.BLOCKS,
                         1.0F, 0.8F + level.random.nextFloat() * 0.4F);
-                level.setBlock(pos, state.setValue(FRUIT, 0), 2);
+                level.setBlock(pos, state.setValue(FRUIT, 0).setValue(RIPE_AGE, 0), 2);
             }
             return InteractionResult.sidedSuccess(level.isClientSide);
         }

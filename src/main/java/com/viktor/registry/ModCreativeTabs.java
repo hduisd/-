@@ -39,6 +39,14 @@ public class ModCreativeTabs {
                         output.accept(ModItems.MANGO_PRESSURE_PLATE_ITEM.get());
                         output.accept(ModItems.ROTTEN_MANGO.get());
                         output.accept(ModItems.ROTTEN_MANGO_BLOCK_ITEM.get());
+                        output.accept(ModItems.GREEN_OLIVE.get());
+                        output.accept(ModItems.BLACK_OLIVE.get());
+                        output.accept(ModItems.GREEN_OLIVE_BLOCK_ITEM.get());
+                        output.accept(ModItems.BLACK_OLIVE_BLOCK_ITEM.get());
+                        output.accept(ModItems.OLIVE_LOG_ITEM.get());
+                        output.accept(ModItems.OLIVE_PLANKS_ITEM.get());
+                        output.accept(ModItems.GREEN_OLIVE_LEAVES_ITEM.get());
+                        output.accept(ModItems.BLACK_OLIVE_LEAVES_ITEM.get());
                     })
                     .build());
 }

@@ -9,6 +9,7 @@ import com.viktor.block.FlammableSlabBlock;
 import com.viktor.block.FlammableStairBlock;
 import com.viktor.block.MangoLeavesBlock;
 import com.viktor.block.MangoLogBlock;
+import com.viktor.block.OliveLeavesBlock;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.ButtonBlock;
@@ -97,6 +98,39 @@ public class ModBlocks {
     public static final DeferredBlock<Block> MANGO_BLOCK = BLOCKS.register("mango_block",
             () -> new Block(BlockBehaviour.Properties.of()
                     .mapColor(MapColor.COLOR_YELLOW)
+                    .strength(0.6F)
+                    .sound(SoundType.WART_BLOCK)));
+
+    // ---- Оливки ----
+    public static final DeferredBlock<MangoLogBlock> OLIVE_LOG = BLOCKS.register("olive_log",
+            () -> new MangoLogBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LOG), null));
+
+    public static final DeferredBlock<FlammableBlock> OLIVE_PLANKS = BLOCKS.register("olive_planks",
+            () -> new FlammableBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS), 5, 20));
+
+    public static final DeferredBlock<OliveLeavesBlock> GREEN_OLIVE_LEAVES = BLOCKS.register("green_olive_leaves",
+            () -> new OliveLeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LEAVES),
+                    () -> ModItems.GREEN_OLIVE.get()));
+
+    public static final DeferredBlock<OliveLeavesBlock> BLACK_OLIVE_LEAVES = BLOCKS.register("black_olive_leaves",
+            () -> new OliveLeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LEAVES),
+                    () -> ModItems.BLACK_OLIVE.get()));
+
+    public static final DeferredBlock<SaplingBlock> GREEN_OLIVE_SAPLING = BLOCKS.register("green_olive_sapling",
+            () -> new SaplingBlock(ModTreeGrowers.GREEN_OLIVE, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING)));
+
+    public static final DeferredBlock<SaplingBlock> BLACK_OLIVE_SAPLING = BLOCKS.register("black_olive_sapling",
+            () -> new SaplingBlock(ModTreeGrowers.BLACK_OLIVE, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING)));
+
+    public static final DeferredBlock<Block> GREEN_OLIVE_BLOCK = BLOCKS.register("green_olive_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.COLOR_GREEN)
+                    .strength(0.6F)
+                    .sound(SoundType.WART_BLOCK)));
+
+    public static final DeferredBlock<Block> BLACK_OLIVE_BLOCK = BLOCKS.register("black_olive_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.COLOR_BLACK)
                     .strength(0.6F)
                     .sound(SoundType.WART_BLOCK)));
 }
