@@ -8,6 +8,7 @@ import net.minecraft.sounds.SoundSource;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
@@ -17,13 +18,15 @@ import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.phys.BlockHitResult;
 
 /**
- * Мангове листя: на ньому росте манго (fruit: 0 = немає, 1 = зелене, 2 = стигле жовте).
- * Манго з'являється лише на листі, під яким є вільне місце (плід «висить»).
- * Стигле манго збирається правим кліком руки.
+ * Мангове листя: на ньому росте манго.
+ * fruit: 0 = немає, 1 = зелене, 2 = стигле жовте, 3 = гниле (якщо стигле довго не збирали).
+ * Плід з'являється лише там, де під листям є вільне місце (він «висить»).
+ * Стигле і гниле збираються правим кліком руки.
  */
 public class MangoLeavesBlock extends FlammableLeavesBlock {
-    public static final IntegerProperty FRUIT = IntegerProperty.create("fruit", 0, 2);
+    public static final IntegerProperty FRUIT = IntegerProperty.create("fruit", 0, 3);
     public static final int RIPE = 2;
+    public static final int ROTTEN = 3;
 
     public MangoLeavesBlock(Properties properties) {
         super(properties);
@@ -38,7 +41,7 @@ public class MangoLeavesBlock extends FlammableLeavesBlock {
 
     @Override
     protected boolean isRandomlyTicking(BlockState state) {
-        return super.isRandomlyTicking(state) || state.getValue(FRUIT) < RIPE;
+        return super.isRandomlyTicking(state) || state.getValue(FRUIT) < ROTTEN;
     }
 
     @Override
@@ -49,17 +52,23 @@ public class MangoLeavesBlock extends FlammableLeavesBlock {
             return; // листя могло опасти
         }
         int fruit = current.getValue(FRUIT);
-        if (fruit < RIPE && level.isEmptyBlock(pos.below()) && random.nextInt(3) == 0) {
-            level.setBlock(pos, current.setValue(FRUIT, fruit + 1), 2);
+        if (fruit < RIPE) {
+            if (level.isEmptyBlock(pos.below()) && random.nextInt(3) == 0) {
+                level.setBlock(pos, current.setValue(FRUIT, fruit + 1), 2);
+            }
+        } else if (fruit == RIPE && random.nextInt(6) == 0) {
+            level.setBlock(pos, current.setValue(FRUIT, ROTTEN), 2);
         }
     }
 
     @Override
     protected InteractionResult useWithoutItem(BlockState state, Level level, BlockPos pos, Player player, BlockHitResult hitResult) {
-        if (state.getValue(FRUIT) == RIPE) {
+        int fruit = state.getValue(FRUIT);
+        if (fruit == RIPE || fruit == ROTTEN) {
             if (!level.isClientSide) {
+                Item drop = fruit == RIPE ? ModItems.MANGO.get() : ModItems.ROTTEN_MANGO.get();
                 int count = 1 + level.random.nextInt(2);
-                Block.popResource(level, pos.below(), new ItemStack(ModItems.MANGO.get(), count));
+                Block.popResource(level, pos.below(), new ItemStack(drop, count));
                 level.playSound(null, pos, SoundEvents.SWEET_BERRY_BUSH_PICK_BERRIES, SoundSource.BLOCKS,
                         1.0F, 0.8F + level.random.nextFloat() * 0.4F);
                 level.setBlock(pos, state.setValue(FRUIT, 0), 2);

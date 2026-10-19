@@ -18,5 +18,7 @@
   "block.viktor.mango_door": "Мангові двері",
   "block.viktor.mango_trapdoor": "Манговий люк",
   "block.viktor.mango_button": "Мангова кнопка",
-  "block.viktor.mango_pressure_plate": "Мангова натискна плита"
+  "block.viktor.mango_pressure_plate": "Мангова натискна плита",
+  "item.viktor.rotten_mango": "Гниле манго",
+  "block.viktor.rotten_mango_block": "Блок гнилого манго"
 }

@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "viktor:mango_leaves"
+    "viktor:mango_leaves",
+    "viktor:rotten_mango_block"
   ]
 }

@@ -36,6 +36,8 @@ public class ModCreativeTabs {
                         output.accept(ModItems.MANGO_TRAPDOOR_ITEM.get());
                         output.accept(ModItems.MANGO_BUTTON_ITEM.get());
                         output.accept(ModItems.MANGO_PRESSURE_PLATE_ITEM.get());
+                        output.accept(ModItems.ROTTEN_MANGO.get());
+                        output.accept(ModItems.ROTTEN_MANGO_BLOCK_ITEM.get());
                     })
                     .build());
 }

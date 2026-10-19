@@ -85,4 +85,11 @@ public class ModBlocks {
 
     public static final DeferredBlock<PressurePlateBlock> MANGO_PRESSURE_PLATE = BLOCKS.register("mango_pressure_plate",
             () -> new PressurePlateBlock(ModWoodTypes.MANGO_SET, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PRESSURE_PLATE)));
+
+    // ---- Гниле манго ----
+    public static final DeferredBlock<Block> ROTTEN_MANGO_BLOCK = BLOCKS.register("rotten_mango_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.COLOR_BROWN)
+                    .strength(0.6F)
+                    .sound(SoundType.MUD)));
 }

@@ -56,4 +56,9 @@ public class ModItems {
     public static final DeferredItem<Item> MANGO_TRAPDOOR_ITEM = blockItem("mango_trapdoor", ModBlocks.MANGO_TRAPDOOR);
     public static final DeferredItem<Item> MANGO_BUTTON_ITEM = blockItem("mango_button", ModBlocks.MANGO_BUTTON);
     public static final DeferredItem<Item> MANGO_PRESSURE_PLATE_ITEM = blockItem("mango_pressure_plate", ModBlocks.MANGO_PRESSURE_PLATE);
+
+    // ---- Гниле манго ----
+    public static final DeferredItem<Item> ROTTEN_MANGO = ITEMS.register("rotten_mango",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> ROTTEN_MANGO_BLOCK_ITEM = blockItem("rotten_mango_block", ModBlocks.ROTTEN_MANGO_BLOCK);
 }

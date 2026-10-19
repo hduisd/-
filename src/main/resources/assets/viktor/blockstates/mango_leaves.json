@@ -8,6 +8,9 @@
     },
     "fruit=2": {
       "model": "viktor:block/mango_leaves_ripe"
+    },
+    "fruit=3": {
+      "model": "viktor:block/mango_leaves_rotten"
     }
   }
 }
