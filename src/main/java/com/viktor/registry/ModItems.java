@@ -1,6 +1,8 @@
 package com.viktor.registry;
 
 import com.viktor.ViktorMod;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.DoubleHighBlockItem;
@@ -39,6 +41,7 @@ public class ModItems {
     public static final DeferredItem<Item> MANGO = ITEMS.register("mango",
             () -> new Item(new Item.Properties().food(MANGO_FOOD)));
 
+    public static final DeferredItem<Item> MANGO_BLOCK_ITEM = blockItem("mango_block", ModBlocks.MANGO_BLOCK);
     public static final DeferredItem<Item> MANGO_LOG_ITEM = blockItem("mango_log", ModBlocks.MANGO_LOG);
     public static final DeferredItem<Item> STRIPPED_MANGO_LOG_ITEM = blockItem("stripped_mango_log", ModBlocks.STRIPPED_MANGO_LOG);
     public static final DeferredItem<Item> MANGO_WOOD_ITEM = blockItem("mango_wood", ModBlocks.MANGO_WOOD);
@@ -58,7 +61,14 @@ public class ModItems {
     public static final DeferredItem<Item> MANGO_PRESSURE_PLATE_ITEM = blockItem("mango_pressure_plate", ModBlocks.MANGO_PRESSURE_PLATE);
 
     // ---- Гниле манго ----
+    /** Гниле манго: майже не насичує і отруює на 10 секунд (200 тіків). */
+    public static final FoodProperties ROTTEN_MANGO_FOOD = new FoodProperties.Builder()
+            .nutrition(1)
+            .saturationModifier(0.1F)
+            .effect(() -> new MobEffectInstance(MobEffects.POISON, 200, 0), 1.0F)
+            .build();
+
     public static final DeferredItem<Item> ROTTEN_MANGO = ITEMS.register("rotten_mango",
-            () -> new Item(new Item.Properties()));
+            () -> new Item(new Item.Properties().food(ROTTEN_MANGO_FOOD)));
     public static final DeferredItem<Item> ROTTEN_MANGO_BLOCK_ITEM = blockItem("rotten_mango_block", ModBlocks.ROTTEN_MANGO_BLOCK);
 }

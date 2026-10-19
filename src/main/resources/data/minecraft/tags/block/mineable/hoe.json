@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     "viktor:mango_leaves",
-    "viktor:rotten_mango_block"
+    "viktor:rotten_mango_block",
+    "viktor:mango_block"
   ]
 }

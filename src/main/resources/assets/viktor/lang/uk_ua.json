@@ -20,5 +20,6 @@
   "block.viktor.mango_button": "Мангова кнопка",
   "block.viktor.mango_pressure_plate": "Мангова натискна плита",
   "item.viktor.rotten_mango": "Гниле манго",
-  "block.viktor.rotten_mango_block": "Блок гнилого манго"
+  "block.viktor.rotten_mango_block": "Блок гнилого манго",
+  "block.viktor.mango_block": "Блок манго"
 }

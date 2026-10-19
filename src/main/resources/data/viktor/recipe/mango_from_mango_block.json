@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "viktor:mango_block"
+    }
+  ],
+  "result": {
+    "id": "viktor:mango",
+    "count": 9
+  }
+}

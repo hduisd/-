@@ -92,4 +92,11 @@ public class ModBlocks {
                     .mapColor(MapColor.COLOR_BROWN)
                     .strength(0.6F)
                     .sound(SoundType.MUD)));
+
+    // ---- Блок манго ----
+    public static final DeferredBlock<Block> MANGO_BLOCK = BLOCKS.register("mango_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.COLOR_YELLOW)
+                    .strength(0.6F)
+                    .sound(SoundType.WART_BLOCK)));
 }

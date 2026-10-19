@@ -21,6 +21,7 @@ public class ModCreativeTabs {
                         output.accept(ModItems.BEANS.get());
                         output.accept(ModItems.BEAN_BLOCK_ITEM.get());
                         output.accept(ModItems.MANGO.get());
+                        output.accept(ModItems.MANGO_BLOCK_ITEM.get());
                         output.accept(ModItems.MANGO_LOG_ITEM.get());
                         output.accept(ModItems.STRIPPED_MANGO_LOG_ITEM.get());
                         output.accept(ModItems.MANGO_WOOD_ITEM.get());
