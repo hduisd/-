@@ -7,10 +7,6 @@ import com.viktor.block.FlammableFenceBlock;
 import com.viktor.block.FlammableFenceGateBlock;
 import com.viktor.block.FlammableSlabBlock;
 import com.viktor.block.FlammableStairBlock;
-import com.viktor.block.FlammableFenceBlock;
-import com.viktor.block.FlammableFenceGateBlock;
-import com.viktor.block.FlammableSlabBlock;
-import com.viktor.block.FlammableStairBlock;
 import com.viktor.block.MangoLeavesBlock;
 import com.viktor.block.MangoLogBlock;
 import net.minecraft.world.level.block.Block;
@@ -20,7 +16,6 @@ import net.minecraft.world.level.block.DoorBlock;
 import net.minecraft.world.level.block.PressurePlateBlock;
 import net.minecraft.world.level.block.SaplingBlock;
 import net.minecraft.world.level.block.SoundType;
-import net.minecraft.world.level.block.TrapDoorBlock;
 import net.minecraft.world.level.block.TrapDoorBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
@@ -64,34 +59,7 @@ public class ModBlocks {
     public static final DeferredBlock<SaplingBlock> MANGO_SAPLING = BLOCKS.register("mango_sapling",
             () -> new SaplingBlock(ModTreeGrowers.MANGO, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING)));
 
-    // ---- Мангова деревина: решта блоків ----
-    public static final DeferredBlock<FlammableStairBlock> MANGO_STAIRS = BLOCKS.register("mango_stairs",
-            () -> new FlammableStairBlock(MANGO_PLANKS.get().defaultBlockState(),
-                    BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_STAIRS)));
-
-    public static final DeferredBlock<FlammableSlabBlock> MANGO_SLAB = BLOCKS.register("mango_slab",
-            () -> new FlammableSlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SLAB)));
-
-    public static final DeferredBlock<FlammableFenceBlock> MANGO_FENCE = BLOCKS.register("mango_fence",
-            () -> new FlammableFenceBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_FENCE)));
-
-    public static final DeferredBlock<FlammableFenceGateBlock> MANGO_FENCE_GATE = BLOCKS.register("mango_fence_gate",
-            () -> new FlammableFenceGateBlock(ModWoodTypes.MANGO,
-                    BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_FENCE_GATE)));
-
-    public static final DeferredBlock<DoorBlock> MANGO_DOOR = BLOCKS.register("mango_door",
-            () -> new DoorBlock(ModWoodTypes.MANGO_SET, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_DOOR)));
-
-    public static final DeferredBlock<TrapDoorBlock> MANGO_TRAPDOOR = BLOCKS.register("mango_trapdoor",
-            () -> new TrapDoorBlock(ModWoodTypes.MANGO_SET, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_TRAPDOOR)));
-
-    public static final DeferredBlock<ButtonBlock> MANGO_BUTTON = BLOCKS.register("mango_button",
-            () -> new ButtonBlock(ModWoodTypes.MANGO_SET, 30, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_BUTTON)));
-
-    public static final DeferredBlock<PressurePlateBlock> MANGO_PRESSURE_PLATE = BLOCKS.register("mango_pressure_plate",
-            () -> new PressurePlateBlock(ModWoodTypes.MANGO_SET,
-                    BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PRESSURE_PLATE)));
-
+    // ---- Набір мангової деревини ----
     public static final DeferredBlock<FlammableStairBlock> MANGO_STAIRS = BLOCKS.register("mango_stairs",
             () -> new FlammableStairBlock(MANGO_PLANKS.get().defaultBlockState(),
                     BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_STAIRS)));

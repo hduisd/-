@@ -36,14 +36,6 @@ public class ModCreativeTabs {
                         output.accept(ModItems.MANGO_TRAPDOOR_ITEM.get());
                         output.accept(ModItems.MANGO_BUTTON_ITEM.get());
                         output.accept(ModItems.MANGO_PRESSURE_PLATE_ITEM.get());
-                        output.accept(ModItems.MANGO_STAIRS_ITEM.get());
-                        output.accept(ModItems.MANGO_SLAB_ITEM.get());
-                        output.accept(ModItems.MANGO_FENCE_ITEM.get());
-                        output.accept(ModItems.MANGO_FENCE_GATE_ITEM.get());
-                        output.accept(ModItems.MANGO_DOOR_ITEM.get());
-                        output.accept(ModItems.MANGO_TRAPDOOR_ITEM.get());
-                        output.accept(ModItems.MANGO_BUTTON_ITEM.get());
-                        output.accept(ModItems.MANGO_PRESSURE_PLATE_ITEM.get());
                     })
                     .build());
 }

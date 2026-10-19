@@ -4,7 +4,6 @@ import com.viktor.ViktorMod;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.DoubleHighBlockItem;
-import net.minecraft.world.item.DoubleHighBlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemNameBlockItem;
 import net.minecraft.world.level.block.Block;
@@ -47,17 +46,6 @@ public class ModItems {
     public static final DeferredItem<Item> MANGO_PLANKS_ITEM = blockItem("mango_planks", ModBlocks.MANGO_PLANKS);
     public static final DeferredItem<Item> MANGO_LEAVES_ITEM = blockItem("mango_leaves", ModBlocks.MANGO_LEAVES);
     public static final DeferredItem<Item> MANGO_SAPLING_ITEM = blockItem("mango_sapling", ModBlocks.MANGO_SAPLING);
-
-    // ---- Мангова деревина: решта предметів ----
-    public static final DeferredItem<Item> MANGO_STAIRS_ITEM = blockItem("mango_stairs", ModBlocks.MANGO_STAIRS);
-    public static final DeferredItem<Item> MANGO_SLAB_ITEM = blockItem("mango_slab", ModBlocks.MANGO_SLAB);
-    public static final DeferredItem<Item> MANGO_FENCE_ITEM = blockItem("mango_fence", ModBlocks.MANGO_FENCE);
-    public static final DeferredItem<Item> MANGO_FENCE_GATE_ITEM = blockItem("mango_fence_gate", ModBlocks.MANGO_FENCE_GATE);
-    public static final DeferredItem<Item> MANGO_DOOR_ITEM = ITEMS.register("mango_door",
-            () -> new DoubleHighBlockItem(ModBlocks.MANGO_DOOR.get(), new Item.Properties()));
-    public static final DeferredItem<Item> MANGO_TRAPDOOR_ITEM = blockItem("mango_trapdoor", ModBlocks.MANGO_TRAPDOOR);
-    public static final DeferredItem<Item> MANGO_BUTTON_ITEM = blockItem("mango_button", ModBlocks.MANGO_BUTTON);
-    public static final DeferredItem<Item> MANGO_PRESSURE_PLATE_ITEM = blockItem("mango_pressure_plate", ModBlocks.MANGO_PRESSURE_PLATE);
 
     public static final DeferredItem<Item> MANGO_STAIRS_ITEM = blockItem("mango_stairs", ModBlocks.MANGO_STAIRS);
     public static final DeferredItem<Item> MANGO_SLAB_ITEM = blockItem("mango_slab", ModBlocks.MANGO_SLAB);
