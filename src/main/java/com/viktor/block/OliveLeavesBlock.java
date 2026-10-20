@@ -1,6 +1,7 @@
 package com.viktor.block;
 
 import net.minecraft.core.BlockPos;
+import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
@@ -53,7 +54,7 @@ public class OliveLeavesBlock extends FlammableLeavesBlock {
             return; // листя могло опасти
         }
         int fruit = current.getValue(FRUIT);
-        if (fruit < RIPE && level.isEmptyBlock(pos.below()) && random.nextInt(6) == 0) {
+        if (fruit < RIPE && level.isEmptyBlock(pos.below()) && random.nextInt(4) == 0) {
             level.setBlock(pos, current.setValue(FRUIT, fruit + 1), 2);
         }
     }
@@ -67,6 +68,12 @@ public class OliveLeavesBlock extends FlammableLeavesBlock {
                 level.playSound(null, pos, SoundEvents.SWEET_BERRY_BUSH_PICK_BERRIES, SoundSource.BLOCKS,
                         1.0F, 0.8F + level.random.nextFloat() * 0.4F);
                 level.setBlock(pos, state.setValue(FRUIT, 0), 2);
+            }
+            return InteractionResult.sidedSuccess(level.isClientSide);
+        }
+        if (state.getValue(FRUIT) == 1 && player.getMainHandItem().isEmpty()) {
+            if (!level.isClientSide) {
+                player.displayClientMessage(Component.translatable("message.viktor.fruit_unripe"), true);
             }
             return InteractionResult.sidedSuccess(level.isClientSide);
         }

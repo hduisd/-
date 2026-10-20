@@ -31,5 +31,6 @@
   "block.viktor.black_olive_leaves": "Листя чорної оливи",
   "block.viktor.black_olive_sapling": "Саджанець чорної оливи",
   "block.viktor.olive_log": "Оливкова колода",
-  "block.viktor.olive_planks": "Оливкові дошки"
+  "block.viktor.olive_planks": "Оливкові дошки",
+  "message.viktor.fruit_unripe": "Плоди ще не дозріли"
 }

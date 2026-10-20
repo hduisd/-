@@ -2,6 +2,7 @@ package com.viktor.block;
 
 import com.viktor.registry.ModItems;
 import net.minecraft.core.BlockPos;
+import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
@@ -82,6 +83,12 @@ public class MangoLeavesBlock extends FlammableLeavesBlock {
                 level.playSound(null, pos, SoundEvents.SWEET_BERRY_BUSH_PICK_BERRIES, SoundSource.BLOCKS,
                         1.0F, 0.8F + level.random.nextFloat() * 0.4F);
                 level.setBlock(pos, state.setValue(FRUIT, 0).setValue(RIPE_AGE, 0), 2);
+            }
+            return InteractionResult.sidedSuccess(level.isClientSide);
+        }
+        if (fruit == 1 && player.getMainHandItem().isEmpty()) {
+            if (!level.isClientSide) {
+                player.displayClientMessage(Component.translatable("message.viktor.fruit_unripe"), true);
             }
             return InteractionResult.sidedSuccess(level.isClientSide);
         }

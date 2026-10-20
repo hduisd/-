@@ -31,5 +31,6 @@
   "block.viktor.black_olive_leaves": "Black Olive Leaves",
   "block.viktor.black_olive_sapling": "Black Olive Sapling",
   "block.viktor.olive_log": "Olive Log",
-  "block.viktor.olive_planks": "Olive Planks"
+  "block.viktor.olive_planks": "Olive Planks",
+  "message.viktor.fruit_unripe": "The fruit isn't ripe yet"
 }

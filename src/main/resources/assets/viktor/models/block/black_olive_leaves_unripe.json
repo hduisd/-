@@ -2,7 +2,7 @@
   "render_type": "minecraft:cutout_mipped",
   "textures": {
     "all": "viktor:block/black_olive_leaves",
-    "fruit": "viktor:block/olive_hanging_unripe",
+    "fruit": "viktor:block/black_olive_hanging_unripe",
     "particle": "viktor:block/black_olive_leaves"
   },
   "elements": [
