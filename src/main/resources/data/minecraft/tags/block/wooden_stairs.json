@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "viktor:mango_stairs"
+    "viktor:mango_stairs",
+    "viktor:olive_stairs"
   ]
 }

@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "viktor:mango_slab"
+    "viktor:mango_slab",
+    "viktor:olive_slab"
   ]
 }

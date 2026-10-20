@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "wooden_door",
+  "key": {
+    "#": {
+      "item": "viktor:olive_planks"
+    }
+  },
+  "pattern": [
+    "##",
+    "##",
+    "##"
+  ],
+  "result": {
+    "id": "viktor:olive_door",
+    "count": 3
+  }
+}

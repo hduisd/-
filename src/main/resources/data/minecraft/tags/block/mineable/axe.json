@@ -16,6 +16,17 @@
     "viktor:mango_button",
     "viktor:mango_pressure_plate",
     "viktor:olive_log",
-    "viktor:olive_planks"
+    "viktor:olive_planks",
+    "viktor:stripped_olive_log",
+    "viktor:olive_wood",
+    "viktor:stripped_olive_wood",
+    "viktor:olive_stairs",
+    "viktor:olive_slab",
+    "viktor:olive_fence",
+    "viktor:olive_fence_gate",
+    "viktor:olive_door",
+    "viktor:olive_trapdoor",
+    "viktor:olive_button",
+    "viktor:olive_pressure_plate"
   ]
 }

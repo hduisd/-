@@ -45,6 +45,17 @@ public class ModCreativeTabs {
                         output.accept(ModItems.BLACK_OLIVE_BLOCK_ITEM.get());
                         output.accept(ModItems.OLIVE_LOG_ITEM.get());
                         output.accept(ModItems.OLIVE_PLANKS_ITEM.get());
+                        output.accept(ModItems.STRIPPED_OLIVE_LOG_ITEM.get());
+                        output.accept(ModItems.OLIVE_WOOD_ITEM.get());
+                        output.accept(ModItems.STRIPPED_OLIVE_WOOD_ITEM.get());
+                        output.accept(ModItems.OLIVE_STAIRS_ITEM.get());
+                        output.accept(ModItems.OLIVE_SLAB_ITEM.get());
+                        output.accept(ModItems.OLIVE_FENCE_ITEM.get());
+                        output.accept(ModItems.OLIVE_FENCE_GATE_ITEM.get());
+                        output.accept(ModItems.OLIVE_DOOR_ITEM.get());
+                        output.accept(ModItems.OLIVE_TRAPDOOR_ITEM.get());
+                        output.accept(ModItems.OLIVE_BUTTON_ITEM.get());
+                        output.accept(ModItems.OLIVE_PRESSURE_PLATE_ITEM.get());
                         output.accept(ModItems.GREEN_OLIVE_LEAVES_ITEM.get());
                         output.accept(ModItems.BLACK_OLIVE_LEAVES_ITEM.get());
                     })

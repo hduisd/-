@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "viktor:block/olive_slab"
+    },
+    "type=top": {
+      "model": "viktor:block/olive_slab_top"
+    },
+    "type=double": {
+      "model": "viktor:block/olive_planks"
+    }
+  }
+}

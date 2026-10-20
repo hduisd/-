@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=y": {
+      "model": "viktor:block/olive_wood"
+    },
+    "axis=z": {
+      "model": "viktor:block/olive_wood",
+      "x": 90
+    },
+    "axis=x": {
+      "model": "viktor:block/olive_wood",
+      "x": 90,
+      "y": 90
+    }
+  }
+}

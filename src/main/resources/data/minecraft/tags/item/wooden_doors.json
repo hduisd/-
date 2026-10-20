@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "viktor:mango_door"
+    "viktor:mango_door",
+    "viktor:olive_door"
   ]
 }

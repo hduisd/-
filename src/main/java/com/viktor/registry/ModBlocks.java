@@ -102,8 +102,19 @@ public class ModBlocks {
                     .sound(SoundType.WART_BLOCK)));
 
     // ---- Оливки ----
+    public static final DeferredBlock<MangoLogBlock> STRIPPED_OLIVE_LOG = BLOCKS.register("stripped_olive_log",
+            () -> new MangoLogBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_OAK_LOG), null));
+
+    public static final DeferredBlock<MangoLogBlock> STRIPPED_OLIVE_WOOD = BLOCKS.register("stripped_olive_wood",
+            () -> new MangoLogBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_OAK_WOOD), null));
+
     public static final DeferredBlock<MangoLogBlock> OLIVE_LOG = BLOCKS.register("olive_log",
-            () -> new MangoLogBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LOG), null));
+            () -> new MangoLogBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LOG),
+                    () -> ModBlocks.STRIPPED_OLIVE_LOG.get()));
+
+    public static final DeferredBlock<MangoLogBlock> OLIVE_WOOD = BLOCKS.register("olive_wood",
+            () -> new MangoLogBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD),
+                    () -> ModBlocks.STRIPPED_OLIVE_WOOD.get()));
 
     public static final DeferredBlock<FlammableBlock> OLIVE_PLANKS = BLOCKS.register("olive_planks",
             () -> new FlammableBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS), 5, 20));
@@ -133,4 +144,31 @@ public class ModBlocks {
                     .mapColor(MapColor.COLOR_BLACK)
                     .strength(0.6F)
                     .sound(SoundType.WART_BLOCK)));
+
+    // ---- Набір оливкової деревини ----
+    public static final DeferredBlock<FlammableStairBlock> OLIVE_STAIRS = BLOCKS.register("olive_stairs",
+            () -> new FlammableStairBlock(OLIVE_PLANKS.get().defaultBlockState(),
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_STAIRS)));
+
+    public static final DeferredBlock<FlammableSlabBlock> OLIVE_SLAB = BLOCKS.register("olive_slab",
+            () -> new FlammableSlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SLAB)));
+
+    public static final DeferredBlock<FlammableFenceBlock> OLIVE_FENCE = BLOCKS.register("olive_fence",
+            () -> new FlammableFenceBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_FENCE)));
+
+    public static final DeferredBlock<FlammableFenceGateBlock> OLIVE_FENCE_GATE = BLOCKS.register("olive_fence_gate",
+            () -> new FlammableFenceGateBlock(ModWoodTypes.OLIVE,
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_FENCE_GATE)));
+
+    public static final DeferredBlock<DoorBlock> OLIVE_DOOR = BLOCKS.register("olive_door",
+            () -> new DoorBlock(ModWoodTypes.OLIVE_SET, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_DOOR)));
+
+    public static final DeferredBlock<TrapDoorBlock> OLIVE_TRAPDOOR = BLOCKS.register("olive_trapdoor",
+            () -> new TrapDoorBlock(ModWoodTypes.OLIVE_SET, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_TRAPDOOR)));
+
+    public static final DeferredBlock<ButtonBlock> OLIVE_BUTTON = BLOCKS.register("olive_button",
+            () -> new ButtonBlock(ModWoodTypes.OLIVE_SET, 30, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_BUTTON)));
+
+    public static final DeferredBlock<PressurePlateBlock> OLIVE_PRESSURE_PLATE = BLOCKS.register("olive_pressure_plate",
+            () -> new PressurePlateBlock(ModWoodTypes.OLIVE_SET, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PRESSURE_PLATE)));
 }

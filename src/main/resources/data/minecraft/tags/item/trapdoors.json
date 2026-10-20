@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "viktor:mango_trapdoor"
+    "viktor:mango_trapdoor",
+    "viktor:olive_trapdoor"
   ]
 }

@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "viktor:olive_log",
+    "viktor:stripped_olive_log",
+    "viktor:olive_wood",
+    "viktor:stripped_olive_wood"
+  ]
+}

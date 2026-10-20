@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "viktor:mango_fence"
+    "viktor:mango_fence",
+    "viktor:olive_fence"
   ]
 }

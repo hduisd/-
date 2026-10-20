@@ -4,7 +4,7 @@
   "group": "planks",
   "ingredients": [
     {
-      "item": "viktor:olive_log"
+      "tag": "viktor:olive_logs"
     }
   ],
   "result": {

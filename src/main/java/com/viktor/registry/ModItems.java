@@ -96,4 +96,18 @@ public class ModItems {
     public static final DeferredItem<Item> BLACK_OLIVE_LEAVES_ITEM = blockItem("black_olive_leaves", ModBlocks.BLACK_OLIVE_LEAVES);
     public static final DeferredItem<Item> GREEN_OLIVE_BLOCK_ITEM = blockItem("green_olive_block", ModBlocks.GREEN_OLIVE_BLOCK);
     public static final DeferredItem<Item> BLACK_OLIVE_BLOCK_ITEM = blockItem("black_olive_block", ModBlocks.BLACK_OLIVE_BLOCK);
+
+    // ---- Набір оливкової деревини ----
+    public static final DeferredItem<Item> STRIPPED_OLIVE_LOG_ITEM = blockItem("stripped_olive_log", ModBlocks.STRIPPED_OLIVE_LOG);
+    public static final DeferredItem<Item> OLIVE_WOOD_ITEM = blockItem("olive_wood", ModBlocks.OLIVE_WOOD);
+    public static final DeferredItem<Item> STRIPPED_OLIVE_WOOD_ITEM = blockItem("stripped_olive_wood", ModBlocks.STRIPPED_OLIVE_WOOD);
+    public static final DeferredItem<Item> OLIVE_STAIRS_ITEM = blockItem("olive_stairs", ModBlocks.OLIVE_STAIRS);
+    public static final DeferredItem<Item> OLIVE_SLAB_ITEM = blockItem("olive_slab", ModBlocks.OLIVE_SLAB);
+    public static final DeferredItem<Item> OLIVE_FENCE_ITEM = blockItem("olive_fence", ModBlocks.OLIVE_FENCE);
+    public static final DeferredItem<Item> OLIVE_FENCE_GATE_ITEM = blockItem("olive_fence_gate", ModBlocks.OLIVE_FENCE_GATE);
+    public static final DeferredItem<Item> OLIVE_DOOR_ITEM = ITEMS.register("olive_door",
+            () -> new DoubleHighBlockItem(ModBlocks.OLIVE_DOOR.get(), new Item.Properties()));
+    public static final DeferredItem<Item> OLIVE_TRAPDOOR_ITEM = blockItem("olive_trapdoor", ModBlocks.OLIVE_TRAPDOOR);
+    public static final DeferredItem<Item> OLIVE_BUTTON_ITEM = blockItem("olive_button", ModBlocks.OLIVE_BUTTON);
+    public static final DeferredItem<Item> OLIVE_PRESSURE_PLATE_ITEM = blockItem("olive_pressure_plate", ModBlocks.OLIVE_PRESSURE_PLATE);
 }

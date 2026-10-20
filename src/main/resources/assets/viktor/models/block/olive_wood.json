@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "viktor:block/olive_log",
+    "side": "viktor:block/olive_log"
+  }
+}
