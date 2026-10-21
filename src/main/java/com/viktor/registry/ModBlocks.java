@@ -171,4 +171,17 @@ public class ModBlocks {
 
     public static final DeferredBlock<PressurePlateBlock> OLIVE_PRESSURE_PLATE = BLOCKS.register("olive_pressure_plate",
             () -> new PressurePlateBlock(ModWoodTypes.OLIVE_SET, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PRESSURE_PLATE)));
+
+    // ---- Рожеві землі ----
+    public static final DeferredBlock<Block> PINK_GRASS_BLOCK = BLOCKS.register("pink_grass_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.COLOR_PINK)
+                    .strength(0.6F)
+                    .sound(SoundType.GRASS)));
+
+    public static final DeferredBlock<Block> PINK_DIRT = BLOCKS.register("pink_dirt",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.COLOR_PURPLE)
+                    .strength(0.5F)
+                    .sound(SoundType.GRAVEL)));
 }

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "top": "viktor:block/pink_grass_block_top",
+    "side": "viktor:block/pink_grass_block_side",
+    "bottom": "viktor:block/pink_dirt"
+  }
+}

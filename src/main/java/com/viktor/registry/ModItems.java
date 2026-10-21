@@ -110,4 +110,8 @@ public class ModItems {
     public static final DeferredItem<Item> OLIVE_TRAPDOOR_ITEM = blockItem("olive_trapdoor", ModBlocks.OLIVE_TRAPDOOR);
     public static final DeferredItem<Item> OLIVE_BUTTON_ITEM = blockItem("olive_button", ModBlocks.OLIVE_BUTTON);
     public static final DeferredItem<Item> OLIVE_PRESSURE_PLATE_ITEM = blockItem("olive_pressure_plate", ModBlocks.OLIVE_PRESSURE_PLATE);
+
+    // ---- Рожеві землі ----
+    public static final DeferredItem<Item> PINK_GRASS_BLOCK_ITEM = blockItem("pink_grass_block", ModBlocks.PINK_GRASS_BLOCK);
+    public static final DeferredItem<Item> PINK_DIRT_ITEM = blockItem("pink_dirt", ModBlocks.PINK_DIRT);
 }

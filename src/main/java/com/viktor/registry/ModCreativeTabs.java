@@ -56,6 +56,8 @@ public class ModCreativeTabs {
                         output.accept(ModItems.OLIVE_TRAPDOOR_ITEM.get());
                         output.accept(ModItems.OLIVE_BUTTON_ITEM.get());
                         output.accept(ModItems.OLIVE_PRESSURE_PLATE_ITEM.get());
+                        output.accept(ModItems.PINK_GRASS_BLOCK_ITEM.get());
+                        output.accept(ModItems.PINK_DIRT_ITEM.get());
                         output.accept(ModItems.GREEN_OLIVE_LEAVES_ITEM.get());
                         output.accept(ModItems.BLACK_OLIVE_LEAVES_ITEM.get());
                     })

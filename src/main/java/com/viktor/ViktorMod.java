@@ -1,6 +1,7 @@
 package com.viktor;
 
 import com.viktor.event.VillagerSetup;
+import com.viktor.worldgen.WorldgenSetup;
 import com.viktor.registry.ModBlocks;
 import com.viktor.registry.ModCreativeTabs;
 import com.viktor.registry.ModFeatures;
@@ -18,5 +19,6 @@ public class ViktorMod {
         ModCreativeTabs.TABS.register(modEventBus);
         ModFeatures.FEATURES.register(modEventBus);
         modEventBus.addListener(VillagerSetup::onCommonSetup);
+        modEventBus.addListener(WorldgenSetup::onCommonSetup);
     }
 }

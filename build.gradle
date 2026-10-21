@@ -9,6 +9,22 @@ group = mod_group_id
 
 repositories {
     mavenLocal()
+    exclusiveContent {
+        forRepository {
+            maven {
+                name = 'Modrinth'
+                url = 'https://api.modrinth.com/maven'
+            }
+        }
+        filter {
+            includeGroup 'maven.modrinth'
+        }
+    }
+}
+
+dependencies {
+    // TerraBlender 4.1.0.8 для NeoForge 1.21.1 (Modrinth, id версії 6e8GCrLb)
+    implementation 'maven.modrinth:terrablender:6e8GCrLb'
 }
 
 base {
