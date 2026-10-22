@@ -45,5 +45,7 @@
   "block.viktor.olive_button": "Оливкова кнопка",
   "block.viktor.olive_pressure_plate": "Оливкова натискна плита",
   "block.viktor.pink_grass_block": "Блок рожевої трави",
-  "block.viktor.pink_dirt": "Рожева земля"
+  "block.viktor.pink_dirt": "Рожева земля",
+  "biome.viktor.pink_lands": "Рожеві землі",
+  "biome.viktor.baykivetska_land": "Байківецька земля"
 }

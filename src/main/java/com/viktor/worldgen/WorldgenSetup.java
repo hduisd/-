@@ -11,6 +11,7 @@ public class WorldgenSetup {
     public static void onCommonSetup(FMLCommonSetupEvent event) {
         event.enqueueWork(() -> {
             Regions.register(new PinkLandsRegion(ResourceLocation.fromNamespaceAndPath(ViktorMod.MODID, "overworld"), 4));
+            Regions.register(new BaykivetskaRegion(ResourceLocation.fromNamespaceAndPath(ViktorMod.MODID, "baykivetska"), 4));
             SurfaceRuleManager.addSurfaceRules(SurfaceRuleManager.RuleCategory.OVERWORLD, ViktorMod.MODID, ModSurfaceRules.makeRules());
         });
     }
