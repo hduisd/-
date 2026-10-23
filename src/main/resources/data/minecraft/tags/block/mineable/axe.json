@@ -27,6 +27,14 @@
     "viktor:olive_door",
     "viktor:olive_trapdoor",
     "viktor:olive_button",
-    "viktor:olive_pressure_plate"
+    "viktor:olive_pressure_plate",
+    "viktor:mango_sign",
+    "viktor:olive_sign",
+    "viktor:mango_wall_sign",
+    "viktor:olive_wall_sign",
+    "viktor:mango_hanging_sign",
+    "viktor:olive_hanging_sign",
+    "viktor:mango_wall_hanging_sign",
+    "viktor:olive_wall_hanging_sign"
   ]
 }

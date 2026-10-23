@@ -47,5 +47,13 @@
   "block.viktor.pink_grass_block": "Pink Grass Block",
   "block.viktor.pink_dirt": "Pink Dirt",
   "biome.viktor.pink_lands": "Pink Lands",
-  "biome.viktor.baykivetska_land": "Baykivetska Land"
+  "biome.viktor.baykivetska_land": "Baykivetska Land",
+  "block.viktor.mango_sign": "Mango Sign",
+  "block.viktor.mango_wall_sign": "Mango Sign",
+  "block.viktor.mango_hanging_sign": "Mango Hanging Sign",
+  "block.viktor.mango_wall_hanging_sign": "Mango Hanging Sign",
+  "block.viktor.olive_sign": "Olive Sign",
+  "block.viktor.olive_wall_sign": "Olive Sign",
+  "block.viktor.olive_hanging_sign": "Olive Hanging Sign",
+  "block.viktor.olive_wall_hanging_sign": "Olive Hanging Sign"
 }

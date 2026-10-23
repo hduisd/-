@@ -15,9 +15,13 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.ButtonBlock;
 import net.minecraft.world.level.block.DoorBlock;
 import net.minecraft.world.level.block.PressurePlateBlock;
+import net.minecraft.world.level.block.CeilingHangingSignBlock;
 import net.minecraft.world.level.block.SaplingBlock;
 import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.StandingSignBlock;
 import net.minecraft.world.level.block.TrapDoorBlock;
+import net.minecraft.world.level.block.WallHangingSignBlock;
+import net.minecraft.world.level.block.WallSignBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
 import net.neoforged.neoforge.registries.DeferredBlock;
@@ -184,4 +188,30 @@ public class ModBlocks {
                     .mapColor(MapColor.COLOR_PURPLE)
                     .strength(0.5F)
                     .sound(SoundType.GRAVEL)));
+
+    // ---- Таблички: mango ----
+    public static final DeferredBlock<StandingSignBlock> MANGO_SIGN = BLOCKS.register("mango_sign",
+            () -> new StandingSignBlock(ModWoodTypes.MANGO, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SIGN)));
+
+    public static final DeferredBlock<WallSignBlock> MANGO_WALL_SIGN = BLOCKS.register("mango_wall_sign",
+            () -> new WallSignBlock(ModWoodTypes.MANGO, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SIGN)));
+
+    public static final DeferredBlock<CeilingHangingSignBlock> MANGO_HANGING_SIGN = BLOCKS.register("mango_hanging_sign",
+            () -> new CeilingHangingSignBlock(ModWoodTypes.MANGO, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_HANGING_SIGN)));
+
+    public static final DeferredBlock<WallHangingSignBlock> MANGO_WALL_HANGING_SIGN = BLOCKS.register("mango_wall_hanging_sign",
+            () -> new WallHangingSignBlock(ModWoodTypes.MANGO, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_HANGING_SIGN)));
+
+    // ---- Таблички: olive ----
+    public static final DeferredBlock<StandingSignBlock> OLIVE_SIGN = BLOCKS.register("olive_sign",
+            () -> new StandingSignBlock(ModWoodTypes.OLIVE, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SIGN)));
+
+    public static final DeferredBlock<WallSignBlock> OLIVE_WALL_SIGN = BLOCKS.register("olive_wall_sign",
+            () -> new WallSignBlock(ModWoodTypes.OLIVE, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SIGN)));
+
+    public static final DeferredBlock<CeilingHangingSignBlock> OLIVE_HANGING_SIGN = BLOCKS.register("olive_hanging_sign",
+            () -> new CeilingHangingSignBlock(ModWoodTypes.OLIVE, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_HANGING_SIGN)));
+
+    public static final DeferredBlock<WallHangingSignBlock> OLIVE_WALL_HANGING_SIGN = BLOCKS.register("olive_wall_hanging_sign",
+            () -> new WallHangingSignBlock(ModWoodTypes.OLIVE, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_HANGING_SIGN)));
 }

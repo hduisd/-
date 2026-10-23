@@ -6,8 +6,10 @@ import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.DoubleHighBlockItem;
+import net.minecraft.world.item.HangingSignItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemNameBlockItem;
+import net.minecraft.world.item.SignItem;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -114,4 +116,14 @@ public class ModItems {
     // ---- Рожеві землі ----
     public static final DeferredItem<Item> PINK_GRASS_BLOCK_ITEM = blockItem("pink_grass_block", ModBlocks.PINK_GRASS_BLOCK);
     public static final DeferredItem<Item> PINK_DIRT_ITEM = blockItem("pink_dirt", ModBlocks.PINK_DIRT);
+
+    public static final DeferredItem<Item> MANGO_SIGN_ITEM = ITEMS.register("mango_sign",
+            () -> new SignItem(new Item.Properties().stacksTo(16), ModBlocks.MANGO_SIGN.get(), ModBlocks.MANGO_WALL_SIGN.get()));
+    public static final DeferredItem<Item> MANGO_HANGING_SIGN_ITEM = ITEMS.register("mango_hanging_sign",
+            () -> new HangingSignItem(ModBlocks.MANGO_HANGING_SIGN.get(), ModBlocks.MANGO_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
+
+    public static final DeferredItem<Item> OLIVE_SIGN_ITEM = ITEMS.register("olive_sign",
+            () -> new SignItem(new Item.Properties().stacksTo(16), ModBlocks.OLIVE_SIGN.get(), ModBlocks.OLIVE_WALL_SIGN.get()));
+    public static final DeferredItem<Item> OLIVE_HANGING_SIGN_ITEM = ITEMS.register("olive_hanging_sign",
+            () -> new HangingSignItem(ModBlocks.OLIVE_HANGING_SIGN.get(), ModBlocks.OLIVE_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
 }

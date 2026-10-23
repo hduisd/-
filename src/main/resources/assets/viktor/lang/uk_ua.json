@@ -47,5 +47,13 @@
   "block.viktor.pink_grass_block": "Блок рожевої трави",
   "block.viktor.pink_dirt": "Рожева земля",
   "biome.viktor.pink_lands": "Рожеві землі",
-  "biome.viktor.baykivetska_land": "Байківецька земля"
+  "biome.viktor.baykivetska_land": "Байківецька земля",
+  "block.viktor.mango_sign": "Мангова табличка",
+  "block.viktor.mango_wall_sign": "Мангова табличка",
+  "block.viktor.mango_hanging_sign": "Мангова висяча табличка",
+  "block.viktor.mango_wall_hanging_sign": "Мангова висяча табличка",
+  "block.viktor.olive_sign": "Оливкова табличка",
+  "block.viktor.olive_wall_sign": "Оливкова табличка",
+  "block.viktor.olive_hanging_sign": "Оливкова висяча табличка",
+  "block.viktor.olive_wall_hanging_sign": "Оливкова висяча табличка"
 }

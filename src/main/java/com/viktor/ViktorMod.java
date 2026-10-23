@@ -1,5 +1,6 @@
 package com.viktor;
 
+import com.viktor.event.SignSetup;
 import com.viktor.event.VillagerSetup;
 import com.viktor.worldgen.WorldgenSetup;
 import com.viktor.registry.ModBlocks;
@@ -19,6 +20,7 @@ public class ViktorMod {
         ModCreativeTabs.TABS.register(modEventBus);
         ModFeatures.FEATURES.register(modEventBus);
         modEventBus.addListener(VillagerSetup::onCommonSetup);
+        modEventBus.addListener(SignSetup::onAddBlocks);
         modEventBus.addListener(WorldgenSetup::onCommonSetup);
     }
 }

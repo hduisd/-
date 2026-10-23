@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "viktor:mango_sign",
+    "viktor:olive_sign",
+    "viktor:mango_wall_sign",
+    "viktor:olive_wall_sign"
+  ]
+}
