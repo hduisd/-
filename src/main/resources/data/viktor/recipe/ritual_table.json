@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "R": {
+      "item": "viktor:rotten_mango"
+    },
+    "N": {
+      "item": "viktor:neutral_crystal"
+    },
+    "P": {
+      "item": "viktor:mango_planks"
+    }
+  },
+  "pattern": [
+    "RNR",
+    "PPP",
+    "P P"
+  ],
+  "result": {
+    "id": "viktor:ritual_table",
+    "count": 1
+  }
+}

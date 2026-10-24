@@ -9,6 +9,7 @@ import com.viktor.block.FlammableSlabBlock;
 import com.viktor.block.FlammableStairBlock;
 import com.viktor.block.MangoLeavesBlock;
 import com.viktor.block.MangoLogBlock;
+import com.viktor.block.RitualTableBlock;
 import com.viktor.block.OliveLeavesBlock;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
@@ -214,4 +215,19 @@ public class ModBlocks {
 
     public static final DeferredBlock<WallHangingSignBlock> OLIVE_WALL_HANGING_SIGN = BLOCKS.register("olive_wall_hanging_sign",
             () -> new WallHangingSignBlock(ModWoodTypes.OLIVE, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_HANGING_SIGN)));
+
+    // ---- Рожева енергія ----
+    public static final DeferredBlock<RitualTableBlock> RITUAL_TABLE = BLOCKS.register("ritual_table",
+            () -> new RitualTableBlock(BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.COLOR_PURPLE)
+                    .strength(2.0F, 6.0F)
+                    .sound(SoundType.WOOD)
+                    .lightLevel(state -> 6)));
+
+    public static final DeferredBlock<Block> ENRICHED_ROTTEN_MANGO_BLOCK = BLOCKS.register("enriched_rotten_mango_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.COLOR_PINK)
+                    .strength(0.8F)
+                    .sound(SoundType.MUD)
+                    .lightLevel(state -> 9)));
 }

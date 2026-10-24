@@ -1,6 +1,8 @@
 package com.viktor.registry;
 
 import com.viktor.ViktorMod;
+import com.viktor.item.GlowingItem;
+import com.viktor.item.ModBoatItem;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
@@ -126,4 +128,27 @@ public class ModItems {
             () -> new SignItem(new Item.Properties().stacksTo(16), ModBlocks.OLIVE_SIGN.get(), ModBlocks.OLIVE_WALL_SIGN.get()));
     public static final DeferredItem<Item> OLIVE_HANGING_SIGN_ITEM = ITEMS.register("olive_hanging_sign",
             () -> new HangingSignItem(ModBlocks.OLIVE_HANGING_SIGN.get(), ModBlocks.OLIVE_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
+
+    public static final DeferredItem<Item> MANGO_BOAT = ITEMS.register("mango_boat",
+            () -> new ModBoatItem(() -> ModEntities.MANGO_BOAT.get(), new Item.Properties().stacksTo(1)));
+    public static final DeferredItem<Item> MANGO_CHEST_BOAT = ITEMS.register("mango_chest_boat",
+            () -> new ModBoatItem(() -> ModEntities.MANGO_CHEST_BOAT.get(), new Item.Properties().stacksTo(1)));
+
+    public static final DeferredItem<Item> OLIVE_BOAT = ITEMS.register("olive_boat",
+            () -> new ModBoatItem(() -> ModEntities.OLIVE_BOAT.get(), new Item.Properties().stacksTo(1)));
+    public static final DeferredItem<Item> OLIVE_CHEST_BOAT = ITEMS.register("olive_chest_boat",
+            () -> new ModBoatItem(() -> ModEntities.OLIVE_CHEST_BOAT.get(), new Item.Properties().stacksTo(1)));
+
+    // ---- Рожева енергія ----
+    public static final DeferredItem<Item> NEUTRAL_CRYSTAL = ITEMS.register("neutral_crystal",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> PINK_ENERGY_CRYSTAL = ITEMS.register("pink_energy_crystal",
+            () -> new GlowingItem(new Item.Properties()));
+    /** Заглушка першого рожевого предмета (пізніше випадатиме з рожевих мобів або руди). */
+    public static final DeferredItem<Item> PINK_ESSENCE = ITEMS.register("pink_essence",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> CHARGED_PINK_ESSENCE = ITEMS.register("charged_pink_essence",
+            () -> new GlowingItem(new Item.Properties()));
+    public static final DeferredItem<Item> RITUAL_TABLE_ITEM = blockItem("ritual_table", ModBlocks.RITUAL_TABLE);
+    public static final DeferredItem<Item> ENRICHED_ROTTEN_MANGO_BLOCK_ITEM = blockItem("enriched_rotten_mango_block", ModBlocks.ENRICHED_ROTTEN_MANGO_BLOCK);
 }

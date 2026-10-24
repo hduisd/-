@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "viktor:block/enriched_rotten_mango_block"
+  }
+}

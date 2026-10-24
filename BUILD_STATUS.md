@@ -1,6 +1,6 @@
 # BUILD_STATUS
-- Остання підтверджена збірка: 0.9.0 (біом «Байківецька земля», користувач: «Так все добре»)
-- 0.10.0 (таблички й висячі таблички манго та олив): збірка не запускалась, у грі не перевірено
-- Ризики 0.10.0: (1) BlockEntityTypeAddBlocksEvent у NeoForge 21.1.x, (2) порядок аргументів конструкторів StandingSignBlock/WallSignBlock/
-  CeilingHangingSignBlock/WallHangingSignBlock (WoodType, Properties), (3) текстури табличок у просторі імен minecraft для WoodType 'viktor_mango'/'viktor_olive'
+- Остання підтверджена збірка: 0.10.0 (таблички працюють)
+- 0.11.0 (ланцюги табличок, човни): користувач перейшов до наступного етапу, результат не повідомлено, у документах лишається «не перевірено»
+- 0.12.0 (рожева енергія, ритуальний стіл): збірка не запускалась, у грі не перевірено
+- Ризики 0.12.0: useItemOn/useWithoutItem (ItemInteractionResult), GlowingItem.isFoil, sendParticles
 - Для гри потрібен TerraBlender-neoforge-1.21.1-4.1.0.8.jar у mods

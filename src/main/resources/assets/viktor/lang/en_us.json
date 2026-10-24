@@ -55,5 +55,20 @@
   "block.viktor.olive_sign": "Olive Sign",
   "block.viktor.olive_wall_sign": "Olive Sign",
   "block.viktor.olive_hanging_sign": "Olive Hanging Sign",
-  "block.viktor.olive_wall_hanging_sign": "Olive Hanging Sign"
+  "block.viktor.olive_wall_hanging_sign": "Olive Hanging Sign",
+  "item.viktor.mango_boat": "Mango Boat",
+  "item.viktor.mango_chest_boat": "Mango Boat with Chest",
+  "entity.viktor.mango_boat": "Mango Boat",
+  "entity.viktor.mango_chest_boat": "Mango Boat with Chest",
+  "item.viktor.olive_boat": "Olive Boat",
+  "item.viktor.olive_chest_boat": "Olive Boat with Chest",
+  "entity.viktor.olive_boat": "Olive Boat",
+  "entity.viktor.olive_chest_boat": "Olive Boat with Chest",
+  "item.viktor.neutral_crystal": "Neutral Crystal",
+  "item.viktor.pink_energy_crystal": "Pink Energy Crystal",
+  "item.viktor.pink_essence": "Pink Essence",
+  "item.viktor.charged_pink_essence": "Charged Pink Essence",
+  "block.viktor.ritual_table": "Ritual Table",
+  "block.viktor.enriched_rotten_mango_block": "Enriched Block of Rotten Mango",
+  "message.viktor.ritual_hint": "Ritual: hold two items in your hands and click the table"
 }

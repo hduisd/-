@@ -39,6 +39,8 @@ public class ModCreativeTabs {
                         output.accept(ModItems.MANGO_PRESSURE_PLATE_ITEM.get());
                         output.accept(ModItems.MANGO_SIGN_ITEM.get());
                         output.accept(ModItems.MANGO_HANGING_SIGN_ITEM.get());
+                        output.accept(ModItems.MANGO_BOAT.get());
+                        output.accept(ModItems.MANGO_CHEST_BOAT.get());
                         output.accept(ModItems.ROTTEN_MANGO.get());
                         output.accept(ModItems.ROTTEN_MANGO_BLOCK_ITEM.get());
                         output.accept(ModItems.GREEN_OLIVE.get());
@@ -60,8 +62,16 @@ public class ModCreativeTabs {
                         output.accept(ModItems.OLIVE_PRESSURE_PLATE_ITEM.get());
                         output.accept(ModItems.OLIVE_SIGN_ITEM.get());
                         output.accept(ModItems.OLIVE_HANGING_SIGN_ITEM.get());
+                        output.accept(ModItems.OLIVE_BOAT.get());
+                        output.accept(ModItems.OLIVE_CHEST_BOAT.get());
                         output.accept(ModItems.PINK_GRASS_BLOCK_ITEM.get());
                         output.accept(ModItems.PINK_DIRT_ITEM.get());
+                        output.accept(ModItems.NEUTRAL_CRYSTAL.get());
+                        output.accept(ModItems.PINK_ESSENCE.get());
+                        output.accept(ModItems.CHARGED_PINK_ESSENCE.get());
+                        output.accept(ModItems.PINK_ENERGY_CRYSTAL.get());
+                        output.accept(ModItems.RITUAL_TABLE_ITEM.get());
+                        output.accept(ModItems.ENRICHED_ROTTEN_MANGO_BLOCK_ITEM.get());
                         output.accept(ModItems.GREEN_OLIVE_LEAVES_ITEM.get());
                         output.accept(ModItems.BLACK_OLIVE_LEAVES_ITEM.get());
                     })
