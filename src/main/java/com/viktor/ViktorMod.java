@@ -5,6 +5,7 @@ import com.viktor.event.VillagerSetup;
 import com.viktor.worldgen.WorldgenSetup;
 import com.viktor.registry.ModBlocks;
 import com.viktor.registry.ModCreativeTabs;
+import com.viktor.registry.ModEntities;
 import com.viktor.registry.ModFeatures;
 import com.viktor.registry.ModItems;
 import net.neoforged.bus.api.IEventBus;
@@ -19,6 +20,7 @@ public class ViktorMod {
         ModItems.ITEMS.register(modEventBus);
         ModCreativeTabs.TABS.register(modEventBus);
         ModFeatures.FEATURES.register(modEventBus);
+        ModEntities.ENTITY_TYPES.register(modEventBus);
         modEventBus.addListener(VillagerSetup::onCommonSetup);
         modEventBus.addListener(SignSetup::onAddBlocks);
         modEventBus.addListener(WorldgenSetup::onCommonSetup);
