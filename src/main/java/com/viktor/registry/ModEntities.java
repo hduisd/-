@@ -3,6 +3,9 @@ package com.viktor.registry;
 import com.viktor.ViktorMod;
 import com.viktor.entity.ModBoatEntity;
 import com.viktor.entity.ModChestBoatEntity;
+import com.viktor.entity.PinkCreeper;
+import com.viktor.entity.PinkSkeleton;
+import com.viktor.entity.PinkZombie;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
@@ -32,4 +35,17 @@ public class ModEntities {
             () -> EntityType.Builder.<ModChestBoatEntity>of(
                             (type, level) -> new ModChestBoatEntity(type, level, () -> ModItems.OLIVE_CHEST_BOAT.get()), MobCategory.MISC)
                     .sized(1.375F, 0.5625F).eyeHeight(0.5625F).clientTrackingRange(10).build("olive_chest_boat"));
+
+    // ---- Рожеві моби ----
+    public static final DeferredHolder<EntityType<?>, EntityType<PinkZombie>> PINK_ZOMBIE = ENTITY_TYPES.register("pink_zombie",
+            () -> EntityType.Builder.<PinkZombie>of(PinkZombie::new, MobCategory.MONSTER)
+                    .sized(0.6F, 1.95F).eyeHeight(1.74F).clientTrackingRange(8).build("pink_zombie"));
+
+    public static final DeferredHolder<EntityType<?>, EntityType<PinkSkeleton>> PINK_SKELETON = ENTITY_TYPES.register("pink_skeleton",
+            () -> EntityType.Builder.<PinkSkeleton>of(PinkSkeleton::new, MobCategory.MONSTER)
+                    .sized(0.6F, 1.99F).eyeHeight(1.74F).clientTrackingRange(8).build("pink_skeleton"));
+
+    public static final DeferredHolder<EntityType<?>, EntityType<PinkCreeper>> PINK_CREEPER = ENTITY_TYPES.register("pink_creeper",
+            () -> EntityType.Builder.<PinkCreeper>of(PinkCreeper::new, MobCategory.MONSTER)
+                    .sized(0.6F, 1.7F).clientTrackingRange(8).build("pink_creeper"));
 }

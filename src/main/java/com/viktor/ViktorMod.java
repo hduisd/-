@@ -1,5 +1,6 @@
 package com.viktor;
 
+import com.viktor.event.EntitySetup;
 import com.viktor.event.SignSetup;
 import com.viktor.event.VillagerSetup;
 import com.viktor.worldgen.WorldgenSetup;
@@ -23,6 +24,8 @@ public class ViktorMod {
         ModEntities.ENTITY_TYPES.register(modEventBus);
         modEventBus.addListener(VillagerSetup::onCommonSetup);
         modEventBus.addListener(SignSetup::onAddBlocks);
+        modEventBus.addListener(EntitySetup::onAttributes);
+        modEventBus.addListener(EntitySetup::onSpawnPlacements);
         modEventBus.addListener(WorldgenSetup::onCommonSetup);
     }
 }

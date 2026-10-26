@@ -72,5 +72,11 @@
   "block.viktor.enriched_rotten_mango_block": "Збагачений блок гнилого манго",
   "message.viktor.ritual_hint": "Ритуал: візьміть у руки два предмети й клацніть по столу",
   "block.viktor.pink_ore": "Рожева руда",
-  "block.viktor.deepslate_pink_ore": "Рожева руда в глибинному сланці"
+  "block.viktor.deepslate_pink_ore": "Рожева руда в глибинному сланці",
+  "entity.viktor.pink_zombie": "Рожевий зомбі",
+  "item.viktor.pink_zombie_spawn_egg": "Яйце виклику рожевого зомбі",
+  "entity.viktor.pink_skeleton": "Рожевий скелет",
+  "item.viktor.pink_skeleton_spawn_egg": "Яйце виклику рожевого скелета",
+  "entity.viktor.pink_creeper": "Рожевий кріпер",
+  "item.viktor.pink_creeper_spawn_egg": "Яйце виклику рожевого кріпера"
 }

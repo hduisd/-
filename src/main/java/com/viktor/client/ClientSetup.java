@@ -27,5 +27,8 @@ public class ClientSetup {
         event.registerEntityRenderer(ModEntities.MANGO_CHEST_BOAT.get(), ctx -> new ModBoatRenderer(ctx, "mango", true));
         event.registerEntityRenderer(ModEntities.OLIVE_BOAT.get(), ctx -> new ModBoatRenderer(ctx, "olive", false));
         event.registerEntityRenderer(ModEntities.OLIVE_CHEST_BOAT.get(), ctx -> new ModBoatRenderer(ctx, "olive", true));
+        event.registerEntityRenderer(ModEntities.PINK_ZOMBIE.get(), PinkZombieRenderer::new);
+        event.registerEntityRenderer(ModEntities.PINK_SKELETON.get(), PinkSkeletonRenderer::new);
+        event.registerEntityRenderer(ModEntities.PINK_CREEPER.get(), PinkCreeperRenderer::new);
     }
 }

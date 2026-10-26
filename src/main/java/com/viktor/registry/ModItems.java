@@ -13,6 +13,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemNameBlockItem;
 import net.minecraft.world.item.SignItem;
 import net.minecraft.world.level.block.Block;
+import net.neoforged.neoforge.common.DeferredSpawnEggItem;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -155,4 +156,12 @@ public class ModItems {
     // ---- Рожева руда ----
     public static final DeferredItem<Item> PINK_ORE_ITEM = blockItem("pink_ore", ModBlocks.PINK_ORE);
     public static final DeferredItem<Item> DEEPSLATE_PINK_ORE_ITEM = blockItem("deepslate_pink_ore", ModBlocks.DEEPSLATE_PINK_ORE);
+
+    // ---- Яйця виклику рожевих мобів ----
+    public static final DeferredItem<Item> PINK_ZOMBIE_SPAWN_EGG = ITEMS.register("pink_zombie_spawn_egg",
+            () -> new DeferredSpawnEggItem(() -> ModEntities.PINK_ZOMBIE.get(), 0xD870A8, 0x5E2A52, new Item.Properties()));
+    public static final DeferredItem<Item> PINK_SKELETON_SPAWN_EGG = ITEMS.register("pink_skeleton_spawn_egg",
+            () -> new DeferredSpawnEggItem(() -> ModEntities.PINK_SKELETON.get(), 0xE6C8D8, 0x8A3A6E, new Item.Properties()));
+    public static final DeferredItem<Item> PINK_CREEPER_SPAWN_EGG = ITEMS.register("pink_creeper_spawn_egg",
+            () -> new DeferredSpawnEggItem(() -> ModEntities.PINK_CREEPER.get(), 0xC8559A, 0x3E1A38, new Item.Properties()));
 }

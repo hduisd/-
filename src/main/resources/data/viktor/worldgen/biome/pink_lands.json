@@ -19,28 +19,10 @@
         "maxCount": 4
       },
       {
-        "type": "minecraft:zombie",
-        "weight": 95,
-        "minCount": 4,
-        "maxCount": 4
-      },
-      {
         "type": "minecraft:zombie_villager",
         "weight": 5,
         "minCount": 1,
         "maxCount": 1
-      },
-      {
-        "type": "minecraft:skeleton",
-        "weight": 100,
-        "minCount": 4,
-        "maxCount": 4
-      },
-      {
-        "type": "minecraft:creeper",
-        "weight": 100,
-        "minCount": 4,
-        "maxCount": 4
       },
       {
         "type": "minecraft:slime",
@@ -59,6 +41,24 @@
         "weight": 5,
         "minCount": 1,
         "maxCount": 1
+      },
+      {
+        "type": "viktor:pink_zombie",
+        "weight": 95,
+        "minCount": 4,
+        "maxCount": 4
+      },
+      {
+        "type": "viktor:pink_skeleton",
+        "weight": 100,
+        "minCount": 4,
+        "maxCount": 4
+      },
+      {
+        "type": "viktor:pink_creeper",
+        "weight": 100,
+        "minCount": 4,
+        "maxCount": 4
       }
     ],
     "creature": [

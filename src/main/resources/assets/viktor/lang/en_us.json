@@ -72,5 +72,11 @@
   "block.viktor.enriched_rotten_mango_block": "Enriched Block of Rotten Mango",
   "message.viktor.ritual_hint": "Ritual: hold two items in your hands and click the table",
   "block.viktor.pink_ore": "Pink Ore",
-  "block.viktor.deepslate_pink_ore": "Deepslate Pink Ore"
+  "block.viktor.deepslate_pink_ore": "Deepslate Pink Ore",
+  "entity.viktor.pink_zombie": "Pink Zombie",
+  "item.viktor.pink_zombie_spawn_egg": "Pink Zombie Spawn Egg",
+  "entity.viktor.pink_skeleton": "Pink Skeleton",
+  "item.viktor.pink_skeleton_spawn_egg": "Pink Skeleton Spawn Egg",
+  "entity.viktor.pink_creeper": "Pink Creeper",
+  "item.viktor.pink_creeper_spawn_egg": "Pink Creeper Spawn Egg"
 }
