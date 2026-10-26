@@ -72,6 +72,8 @@ public class ModCreativeTabs {
                         output.accept(ModItems.PINK_ENERGY_CRYSTAL.get());
                         output.accept(ModItems.RITUAL_TABLE_ITEM.get());
                         output.accept(ModItems.ENRICHED_ROTTEN_MANGO_BLOCK_ITEM.get());
+                        output.accept(ModItems.PINK_ORE_ITEM.get());
+                        output.accept(ModItems.DEEPSLATE_PINK_ORE_ITEM.get());
                         output.accept(ModItems.GREEN_OLIVE_LEAVES_ITEM.get());
                         output.accept(ModItems.BLACK_OLIVE_LEAVES_ITEM.get());
                     })

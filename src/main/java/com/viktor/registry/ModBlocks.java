@@ -230,4 +230,11 @@ public class ModBlocks {
                     .strength(0.8F)
                     .sound(SoundType.MUD)
                     .lightLevel(state -> 9)));
+
+    // ---- Рожева руда ----
+    public static final DeferredBlock<Block> PINK_ORE = BLOCKS.register("pink_ore",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_ORE).lightLevel(state -> 5)));
+
+    public static final DeferredBlock<Block> DEEPSLATE_PINK_ORE = BLOCKS.register("deepslate_pink_ore",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.DEEPSLATE_IRON_ORE).lightLevel(state -> 5)));
 }

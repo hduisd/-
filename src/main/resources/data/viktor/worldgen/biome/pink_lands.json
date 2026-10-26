@@ -126,7 +126,8 @@
       "minecraft:ore_redstone",
       "minecraft:ore_diamond",
       "minecraft:ore_lapis",
-      "minecraft:ore_copper"
+      "minecraft:ore_copper",
+      "viktor:ore_pink"
     ],
     [],
     [

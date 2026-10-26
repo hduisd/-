@@ -70,5 +70,7 @@
   "item.viktor.charged_pink_essence": "Заряджена рожева есенція",
   "block.viktor.ritual_table": "Ритуальний стіл",
   "block.viktor.enriched_rotten_mango_block": "Збагачений блок гнилого манго",
-  "message.viktor.ritual_hint": "Ритуал: візьміть у руки два предмети й клацніть по столу"
+  "message.viktor.ritual_hint": "Ритуал: візьміть у руки два предмети й клацніть по столу",
+  "block.viktor.pink_ore": "Рожева руда",
+  "block.viktor.deepslate_pink_ore": "Рожева руда в глибинному сланці"
 }

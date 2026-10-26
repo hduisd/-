@@ -151,4 +151,8 @@ public class ModItems {
             () -> new GlowingItem(new Item.Properties()));
     public static final DeferredItem<Item> RITUAL_TABLE_ITEM = blockItem("ritual_table", ModBlocks.RITUAL_TABLE);
     public static final DeferredItem<Item> ENRICHED_ROTTEN_MANGO_BLOCK_ITEM = blockItem("enriched_rotten_mango_block", ModBlocks.ENRICHED_ROTTEN_MANGO_BLOCK);
+
+    // ---- Рожева руда ----
+    public static final DeferredItem<Item> PINK_ORE_ITEM = blockItem("pink_ore", ModBlocks.PINK_ORE);
+    public static final DeferredItem<Item> DEEPSLATE_PINK_ORE_ITEM = blockItem("deepslate_pink_ore", ModBlocks.DEEPSLATE_PINK_ORE);
 }

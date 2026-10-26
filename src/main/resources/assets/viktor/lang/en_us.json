@@ -70,5 +70,7 @@
   "item.viktor.charged_pink_essence": "Charged Pink Essence",
   "block.viktor.ritual_table": "Ritual Table",
   "block.viktor.enriched_rotten_mango_block": "Enriched Block of Rotten Mango",
-  "message.viktor.ritual_hint": "Ritual: hold two items in your hands and click the table"
+  "message.viktor.ritual_hint": "Ritual: hold two items in your hands and click the table",
+  "block.viktor.pink_ore": "Pink Ore",
+  "block.viktor.deepslate_pink_ore": "Deepslate Pink Ore"
 }
